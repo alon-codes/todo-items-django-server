@@ -1,9 +1,11 @@
 {
-    "builds": [{
-        "src": "todo_items_django_server/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
+    "builds": [
+        {
+            "src": "todo_items_django_server/wsgi.py",
+            "use": "@vercel/python",
+            "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",
