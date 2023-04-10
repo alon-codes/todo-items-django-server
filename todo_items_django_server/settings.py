@@ -137,7 +137,3 @@ REST_FRAMEWORK = {
 }
 
 APPEND_SLASH = False
-
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000'
-]
