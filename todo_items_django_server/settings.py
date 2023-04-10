@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1', '.vercel.app',
-    'todo-items-django-server.vercel.app'
+    'todo-items-django-server.vercel.app',
+    'localhost:3001'
 ]
 
 
