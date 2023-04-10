@@ -10,6 +10,7 @@ class TodoSerializer(serializers.Serializer):
     created_at = serializers.DateTimeField(read_only=True, required=False)
     last_updated = serializers.DateTimeField(read_only=True, required=False)
     order = serializers.IntegerField(required=True)
+    color = serializers.CharField(required=False)
 
     class Meta:
         model = Todo

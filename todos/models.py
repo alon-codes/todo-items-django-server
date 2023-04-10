@@ -9,3 +9,4 @@ class Todo(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
     order = models.IntegerField(editable=False)
+    color = models.IntegerField(default=10)
