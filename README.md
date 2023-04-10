@@ -1,2 +1,2 @@
 # todo-items-django-server
-Django in memory back-end code
+SQLite in memory and Django back-end code
