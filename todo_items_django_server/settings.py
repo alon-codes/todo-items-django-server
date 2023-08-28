@@ -84,13 +84,8 @@ WSGI_APPLICATION = "todo_items_django_server.wsgi.application"
 
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': os.environ.get('DB_NAME'),
-    'HOST': os.environ.get('DB_HOST'),
-    'PORT': os.environ.get('DB_PORT'),
-    'USER': os.environ.get('DB_USER'),
-    'PASSWORD': os.environ.get('DB_PASSWORD'),
-    'OPTIONS': {'ssl': {'ca': os.environ.get('MYSQL_ATTR_SSL_CA')}}
+    'ENGINE': 'django.db.backends.sqlite',
+    'NAME': BASE_DIR / "db.sqlite",
   }
 }
 
