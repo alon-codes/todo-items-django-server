@@ -6,4 +6,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt --no-cache-dir
 COPY . .
 EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "todo_items_django_server.wsgi"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "todos.wsgi"]
